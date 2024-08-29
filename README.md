@@ -13,7 +13,14 @@ A simple and intuitive ToDo app built with Flutter. Manage your tasks efficientl
 <br/>
 
 ## Screenshots
-![](/assets/app_images/icon.jpg "App Icon")    ![](/assets/app_images/flash_screen.jpg "Flash Screen")  ![](/assets/app_images/home_page.jpg "Home Page")  ![](/assets/app_images/add_new_task.jpg "Add New Task")  ![](/assets/app_images/delete_task.jpg "Delete Task")  
+App Icon             |Flash Screen        |Home Page             |
+:-------------------------:|:-------------------------:|:-------------------------: 
+![](/assets/app_images/icon.jpg "App Icon")  |  ![](/assets/app_images/flash_screen.jpg "Flash Screen")  |  ![](/assets/app_images/home_page.jpg "Home Page")
+
+
+Add New Task             |Delete Task        
+:-------------------------:|:-------------------------:
+![](/assets/app_images/add_new_task.jpg "Add New Task")  |      ![](/assets/app_images/delete_task.jpg "Delete Task")  
 
 <br/>
 

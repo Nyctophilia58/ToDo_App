@@ -35,7 +35,6 @@ class _HomePageState extends State<HomePage> {
           onChanged: (value) {
             newTaskName = value;
           },
-
           added: () {
             setState(() {
               toDoList.add({'taskName': newTaskName, 'isDone': false});
@@ -48,6 +47,12 @@ class _HomePageState extends State<HomePage> {
         );
       },
     );
+  }
+
+  void deleteTask(int index) {
+    setState(() {
+      toDoList.removeAt(index);
+    });
   }
 
   @override
@@ -77,6 +82,7 @@ class _HomePageState extends State<HomePage> {
             taskName: toDoList[index]['taskName'],
             isDone: toDoList[index]['isDone'],
             onChanged: (value) => checkBoxChanged(value, index),
+            deleteFunction: (context) => deleteTask(index),
           );
         },
       ),

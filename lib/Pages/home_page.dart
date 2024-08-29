@@ -37,7 +37,11 @@ class _HomePageState extends State<HomePage> {
           },
           added: () {
             setState(() {
+              if (newTaskName == '') {
+                return;
+              }
               toDoList.add({'taskName': newTaskName, 'isDone': false});
+              newTaskName = '';
             });
             Navigator.pop(context);
           },

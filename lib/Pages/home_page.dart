@@ -35,13 +35,14 @@ class _HomePageState extends State<HomePage> {
           onChanged: (value) {
             newTaskName = value;
           },
-          cancelled: () {
-            Navigator.pop(context);
-          },
+
           added: () {
             setState(() {
               toDoList.add({'taskName': newTaskName, 'isDone': false});
             });
+            Navigator.pop(context);
+          },
+          cancelled: () {
             Navigator.pop(context);
           },
         );
